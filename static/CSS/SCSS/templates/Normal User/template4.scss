@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@mixin margin-bot {
+    margin-bottom: 66px;
+}
+
+body {
+    background: radial-gradient(#001111, #004e4e);
+    animation-name: onopen !important;
+    animation-timing-function: ease-in-out !important;
+    animation-duration: 3s !important;
+    animation-delay: 0s !important;
+}
+
+@keyframes onopen {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.imgs {
+    // border: 6px solid #0edae1; 
+    height: 209px !important;
+    width: 209px !important;
+    border-radius: 5px;
+    margin: 25px;
+    outline: none;
+    box-shadow: -16px -14px 19px;
+
+    img {
+        height: inherit !important;
+        width: inherit !important;
+        border-radius: inherit;
+    }
+}
+
+main {
+    text-shadow: 0 0 25px #21f3f3;
+    color: #0edae1;
+    font-weight: bolder;
+}
+
+.happy-birthday {
+    height: 30%;
+    img {
+        height: 256px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+#intro-section {
+    font-family: 'Dancing Script', cursive;
+    font-size: 82px;
+    height: fit-content;
+    text-align: center;
+
+    .wish {
+        font-size: 162px;
+        font-family: 'Kaushan Script', cursive;
+        font-weight: normal;
+    }
+
+    .bg-image {
+        font-size: 100px;
+    }
+}
+
+#description {
+    text-align: center;
+    height: fit-content;
+    font-size: 60px;
+    font-family: 'Courgette', cursive;
+}
+
+section {
+    @include margin-bot();
+}
+
+#images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 25px #21f3f3;
+    color: #0edae1;
+    font: normal normal bold 44px "Patrick Hand", cursive;
+    width: 100vw;
+    align-items: center;
+
+    .img-div1, .img-div2 {
+        width: auto;
+        max-width: 100vw !important;
+        display: flex;
+        height: auto;
+    }
+}

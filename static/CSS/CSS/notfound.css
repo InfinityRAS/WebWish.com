@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #fff;
+    color: #222;
+    padding: 15px;
+    font: 15px/22px arial,sans-serif;
+    scroll-behavior: smooth;
+}
+
+* > body{
+    background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
+    padding-right: 205px;
+}
+
+body{
+    margin: 7% auto 0;
+    max-width: 600px;
+    min-height: 180px;
+    padding: 30px 0 15px;
+    font-size: 20px;
+}
+
+p{
+    margin: 11px 0 22px;
+    overflow: hidden;
+}
+
+ins {
+    color: #777;
+    text-decoration: none;
+}
+
+#logo{
+    height: 156px;
+    border: 3px solid #0b0e6b;
+    border-radius: 91px;
+}

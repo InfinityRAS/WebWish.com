@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+body {
+  background: radial-gradient(#001111, #004e4e);
+  -webkit-animation-name: onopen !important;
+          animation-name: onopen !important;
+  -webkit-animation-timing-function: ease-in-out !important;
+          animation-timing-function: ease-in-out !important;
+  -webkit-animation-duration: 3s !important;
+          animation-duration: 3s !important;
+  -webkit-animation-delay: 0s !important;
+          animation-delay: 0s !important;
+}
+
+@-webkit-keyframes onopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes onopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.imgs {
+  height: 209px !important;
+  width: 209px !important;
+  border-radius: 5px;
+  margin: 25px;
+  outline: none;
+  -webkit-box-shadow: -16px -14px 19px;
+          box-shadow: -16px -14px 19px;
+}
+
+.imgs img {
+  height: inherit !important;
+  width: inherit !important;
+  border-radius: inherit;
+}
+
+main {
+  text-shadow: 0 0 25px #21f3f3;
+  color: #0edae1;
+  font-weight: bolder;
+}
+
+.happy-birthday {
+  height: 30%;
+}
+
+.happy-birthday img {
+  height: 256px;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+
+#intro-section {
+  font-family: 'Dancing Script', cursive;
+  font-size: 82px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+#intro-section .wish {
+  font-size: 162px;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: normal;
+}
+
+#intro-section .bg-image {
+  font-size: 100px;
+}
+
+#description {
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 60px;
+  font-family: 'Courgette', cursive;
+}
+
+section {
+  margin-bottom: 66px;
+}
+
+#images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 0 0 25px #21f3f3;
+  color: #0edae1;
+  font: normal normal bold 44px "Patrick Hand", cursive;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#images .img-div1, #images .img-div2 {
+  width: auto;
+  max-width: 100vw !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+/*# sourceMappingURL=template4.css.map */

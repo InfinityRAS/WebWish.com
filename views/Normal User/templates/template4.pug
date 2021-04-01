@@ -1,0 +1,67 @@
+extends ../../base.pug 
+
+block title 
+    | Happy Birthday, #{name} - WebWish.com
+
+block style 
+    style 
+        include ../../../static/CSS/CSS/Templates/Normal User/template4.css 
+
+block body 
+    main    
+        section#intro-section
+            div.happy-birthday
+                img(src="../../../static/Img/Img/cake.png", alt="Happy Birthday")
+            div.wish
+                | Happy 
+                br
+                | Birthday 
+            
+            div.bg-image
+                div.name #{name}Aryan
+                hr
+
+            div.wisher-name From #{wisher}Aryan
+            hr
+
+        section#description 
+            h1.description-heading Some of the words for Aryan#{name}, from Aryan sisodiya#{wisher},
+            hr
+            div.description #{desc} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos odio, accusamus ducimus totam vitae consequatur ut repudiandae fuga eius impedit. Laboriosam voluptas ipsam non praesentium, cupiditate pariatur possimus ipsum perferendis ratione ab dolorum delectus! Minima ipsam laudantium unde quos aspernatur. Blanditiis ut tempora maxime consectetur!
+        hr
+
+        section#images
+            h1#img-heading Some of the Great images of #{name},
+            div.img-div1
+                div.imgs
+                    //- img.imageContent(src='#{image1}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/1.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image2}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/2.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image3}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/3.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image4}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/4.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image5}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/5.jpg', alt="Happy Birthday")
+
+            div.img-div2 
+                div.imgs
+                    //- img.imageContent(src='#{image6}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/6.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image7}', alt="Happy Birthday")
+                    img.imageContent#imageContent-1(src='../../../static/Img/Img/7.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image8}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/8.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image9}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/9.jpg', alt="Happy Birthday")
+                div.imgs
+                    //- img.imageContent(src='#{image10}', alt="Happy Birthday")
+                    img.imageContent(src='../../../static/Img/Img/10.jpg', alt="Happy Birthday")

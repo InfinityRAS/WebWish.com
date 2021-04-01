@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Patrick+Hand&display=swap");
+#backImg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  opacity: 90%;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  background-image: url(../../../static/Img/Template/Template1.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body {
+  background: radial-gradient(#001111, #004e4e);
+  background-position: center;
+  background-size: cover;
+  -webkit-animation-name: onopen !important;
+          animation-name: onopen !important;
+  -webkit-animation-timing-function: ease-in-out !important;
+          animation-timing-function: ease-in-out !important;
+  -webkit-animation-duration: 3s !important;
+          animation-duration: 3s !important;
+  -webkit-animation-delay: 0s !important;
+          animation-delay: 0s !important;
+}
+
+@-webkit-keyframes onopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes onopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: -1415px;
+  width: 100vw;
+}
+
+#name {
+  font: normal normal bold 15px "Courgette", cursive;
+  text-align: center;
+  color: #0edae1;
+  position: absolute;
+  width: 100vw;
+  text-shadow: 0 0 25px #21f3f3;
+  bottom: 0px;
+}
+
+#wishersName {
+  font: normal normal bold 41px "Patrick Hand", cursive;
+  text-align: center;
+  color: #0edae1;
+  position: absolute;
+  width: 100vw;
+  text-shadow: 0 0 25px #21f3f3;
+  bottom: -157px;
+}
+
+#description {
+  font: normal normal bold 44px "Patrick Hand", cursive;
+  text-align: center;
+  color: #0edae1;
+  position: absolute;
+  width: 100vw;
+  text-shadow: 0 0 25px #21f3f3;
+  bottom: -567px;
+  font-family: "Merienda", cursive;
+}
+
+#imgs {
+  text-shadow: 0 0 25px #21f3f3;
+  color: #0edae1;
+  font: normal normal bold 44px "Patrick Hand", cursive;
+  position: absolute;
+  bottom: -1321px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.imgDiv1,
+.imgDiv2 {
+  width: auto;
+  max-width: 100vw !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  /* margin: 26px 0px;*/
+}
+
+.imgs {
+  /* border: 6px solid #0edae1; */
+  height: 209px !important;
+  width: 209px !important;
+  border-radius: 5px;
+  margin: 25px;
+  outline: none;
+  -webkit-box-shadow: -16px -14px 19px;
+          box-shadow: -16px -14px 19px;
+}
+
+.imgs img {
+  height: inherit !important;
+  width: inherit !important;
+  border-radius: inherit;
+}
+/*# sourceMappingURL=template1.css.map */

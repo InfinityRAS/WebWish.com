@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap');
+@-webkit-keyframes menu-open {
+  from {
+    position: absolute;
+    left: -295px;
+  }
+  to {
+    position: absolute;
+    left: 0px;
+  }
+}
+@keyframes menu-open {
+  from {
+    position: absolute;
+    left: -295px;
+  }
+  to {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes menu-close {
+  from {
+    position: absolute;
+    left: 0px;
+  }
+  to {
+    position: absolute;
+    left: -295px;
+  }
+}
+
+@keyframes menu-close {
+  from {
+    position: absolute;
+    left: 0px;
+  }
+  to {
+    position: absolute;
+    left: -295px;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+main .creators {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px;
+}
+
+main .creators .img-container {
+  width: 50vw;
+  height: 60vh;
+  border-radius: 20%;
+  margin-right: 150px;
+  background: url("/static/Img/Img/Adithya.jpeg");
+  background-size: cover;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .creators .img-container:hover {
+  width: 55vw;
+  height: 65vh;
+}
+
+main .creators h3 {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  padding: 70px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .creators h3:hover {
+  font-size: 45px;
+}
+
+main .contact-container {
+  text-align: center;
+}
+
+main .contact-container .contact {
+  font-size: 30px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#a1a1f8), to(#9ab471));
+  background: linear-gradient(90deg, #a1a1f8, #9ab471);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .contact-container .contact:hover {
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+main .why {
+  padding: 100px;
+  text-align: center;
+  background: white;
+  margin: 40px 100px;
+  font-size: 35px;
+  border-radius: 4px;
+}
+
+main .why .why-head {
+  font-family: 'Chango', cursive;
+  margin: 50px 75px;
+  font-size: 50px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .why .why-head:hover {
+  font-size: 55px;
+}
+
+main .why .content {
+  padding: 75px;
+}
+
+main .why .important {
+  margin: 50px;
+}
+
+main .why .most-important {
+  font-size: 55px;
+  font-family: 'Fascinate', cursive;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .why .most-important:hover {
+  font-size: 60px;
+}
+
+main .why .end {
+  margin-top: 50px;
+}
+
+input, button, a {
+  cursor: pointer !important;
+  outline: none !important;
+}
+
+@media only screen and (max-width: 1855px) {
+  nav {
+    padding: 10px 7px;
+  }
+  nav ul .nav-links a {
+    margin: 80px;
+  }
+}
+
+@media only screen and (max-width: 1677px) {
+  main .creators {
+    padding: 85px;
+  }
+  main .creators .img-container {
+    margin-right: 85px;
+  }
+  main .why {
+    font-size: 25px;
+    padding: 50px;
+  }
+  main .why .why-head {
+    font-size: 43px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  main .why .why-head:hover {
+    font-size: 45px;
+  }
+  main .why .content {
+    padding: 100px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  main .why .most-important {
+    font-size: 43px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  main .why .most-important:hover {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1545px) {
+  main .creators {
+    padding: 70px;
+  }
+  main .creators .img-container {
+    margin-right: 50px;
+  }
+  main .creators h3 {
+    padding-right: 55px;
+    font-size: 35px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  main .creators h3:hover {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1436px) {
+  nav {
+    opacity: 0;
+    pointer-events: none;
+  }
+  main .contact-container, .upgrade-container {
+    display: none !important;
+  }
+  header .menu-img-container {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media only screen and (max-width: 1385px) {
+  main .creators {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main .creators {
+    padding: 30px;
+  }
+  main .creators .img-container {
+    margin-right: 40px;
+  }
+  main .creators h3 {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  main .creators {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  main .creators .img-container {
+    margin-right: 0px;
+    width: 70vw;
+    height: 70vh;
+  }
+  main .creators .img-container:hover {
+    width: 75vw;
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main .why {
+    padding: 50px;
+  }
+  main .why .content {
+    padding: 40px;
+  }
+  main .why .important {
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  main .why {
+    padding: 20px;
+  }
+  main .why .content {
+    padding: 20px;
+  }
+  main .why .important {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main .why {
+    font-size: 20px;
+    padding: 10px;
+  }
+  main .why .why-head {
+    font-size: 30px;
+    margin: 25px 50px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  main .why .why-head:hover {
+    font-size: 32px;
+  }
+  main .why .most-important {
+    font-size: 30px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  main .why .most-important:hover {
+    font-size: 32px;
+  }
+  main .why .content {
+    padding: 10px;
+  }
+  main .why .important {
+    margin: 10px;
+  }
+  main .why .end {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .why {
+    padding: 3px;
+    margin: 40px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

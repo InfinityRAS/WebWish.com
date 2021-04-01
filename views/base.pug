@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        base(href="/")
+        link(rel="stylesheet", href="/static/CSS/CSS/base.css")
+        link(rel="shortcut icon", href="../static/Img/Logos/logo.png", type="image/x-icon")
+        block style 
+        title 
+            block title
+    body 
+        .all
+            .menu
+                .menu-close-img-container
+                    img(src="/static/Img/icon/menu-close.svg", alt="Menu Close icon").menu-close-img
+                ul
+                    li.menu-links
+                        a(href="/")#home Home
+                    //- I have to change this data
+                    li.menu-links
+                        a(href="#")#about About Us
+                    li.menu-links
+                        a(href="#")#website Create Website
+                    li.menu-links#login
+                        a(href="#") Log in 
+                    li.menu-links
+                        a(href="#")#signup Sign Up!
+                    li.menu-links 
+                        a(href="#")#upgrade Upgrade Now!
+                    li.menu-links 
+                        a(href="#")#contact Contact Us
+
+            .notification-wrapper
+                .another-wrapper
+                    button.notification Right click is disabled in this website.
+            header
+                .menu-img-container
+                    img(src="/static/Img/icon/menu.svg", alt="Menu Icon").menu-img
+                h1.main-heading Web Wish
+                div.themeChange
+                    //- Change the source and sourceset according to the directory
+                    img(src="/static/Img/icon/darkMode.svg", alt="Change theme", srcset="/static/Img/icon/darkMode.svg").themeChanger
+            
+            nav
+                ul
+                    li.nav-links
+                        a(href="./html/index.html")#home-link Home
+                    //- I have to change this data
+                    li.nav-links
+                        a(href="#")#about-link About Us
+                    li.nav-links
+                        a(href="#")#website-link Create Website
+                    li.nav-links#login-link
+                        a(href="#") Log in 
+                    li.nav-links
+                        a(href="#")#signup-link 
+                            button Sign Up!
+            
+            .upgrade-container 
+                button.upgrade Upgrade now!
+        block body 
+        footer 
+            .copyright
+                h4 Copyright &copy; 2021-2022 | www.WebWish.com <br><br> Created by Aryan Sisodiya, Adithya K.G. and Arjun K.G.
+            .sections 
+                .first-section
+                    h5 More: 
+                    p Lorem
+                    p Ipsum
+                    p Dolor
+                    p Sit
+                .second-section
+                    h5 Contact us via:
+                    p adithyakg20032007@gmail.com
+                    p aryansisodiya091107@gmail.com
+                .third-section
+                    a(href="mailto:adithyakg20032007@gmail.com") 
+                        img(src="/static/Img/Img/gmail.png", alt="Image not supported")
+            .gesture
+                h4 Hello there, waiting for your next visit.
+    script(src="../static/Js/base.js")
+    block js

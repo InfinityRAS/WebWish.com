@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden !important;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle at top left, #ffffd4, #d6ff77);
+  border-radius: 5px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: "Roboto Slab", serif;
+}

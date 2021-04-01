@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle at top left, #ffffd4, #d6ff77);
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    -45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto Slab", serif !important;
+  overflow-x: hidden;
+  overflow: overlay;
+}
+
+.all {
+  min-width: 100vw;
+}
+
+.menu {
+  position: absolute;
+  left: -295px;
+  display: inline-block;
+  height: 100vh;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#b3ffa0),
+    to(#80ff61)
+  );
+  background: linear-gradient(-90deg, #b3ffa0, #80ff61);
+  padding: 50px;
+  position: fixed;
+  z-index: 12;
+  color: white;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.menu .menu-close-img-container {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.menu .menu-close-img-container .menu-close-img {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu .menu-close-img-container .menu-close-img:hover {
+  width: 70px;
+  height: 70px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul .menu-links {
+  padding-bottom: 20px;
+}
+
+.menu ul .menu-links a {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#6868ff),
+    to(#00005a)
+  );
+  background: linear-gradient(90deg, #6868ff, #00005a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Syne Mono", monospace;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu ul .menu-links a:hover {
+  font-size: 30px;
+}
+
+.notification-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.notification-wrapper .another-wrapper {
+  width: 256.34px;
+  height: 35px;
+  z-index: 5;
+}
+
+.notification-wrapper .another-wrapper .notification {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.623);
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+header .menu-img-container {
+  position: absolute;
+  left: 8px;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+header .menu-img-container .menu-img {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 8px;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .menu-img-container .menu-img:hover {
+  width: 70px;
+  height: 70px;
+}
+
+header .main-heading {
+  font-size: 90px;
+  font-family: "Redressed", cursive;
+  display: inline-block;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#dabeff),
+    to(#b7ff7d)
+  );
+  background: linear-gradient(90deg, #dabeff, #b7ff7d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+header .main-heading:hover {
+  font-size: 95px;
+}
+
+header .themeChange {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+
+header .themeChange .themeChanger {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .themeChange .themeChanger:hover {
+  width: 70px;
+  height: 70px;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.808);
+  padding: 15px;
+  font-family: "Syne Mono", monospace;
+  font-size: 25px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+  color: white;
+  position: relative;
+}
+
+nav ul .nav-links {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav ul .nav-links:hover {
+  font-size: 30px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  margin: 120px;
+}
+
+nav ul button {
+  font-family: "Syne Mono", monospace;
+  font-size: 25px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #005d00;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav ul button:hover {
+  background: #00d600;
+  color: black;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.upgrade-container {
+  text-align: center;
+}
+
+.upgrade-container .upgrade {
+  margin-top: 30px;
+  font-size: 30px;
+  border: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#a1a1f8),
+    to(#9ab471)
+  );
+  background: linear-gradient(90deg, #a1a1f8, #9ab471);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.upgrade-container .upgrade:hover {
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 0.25rem;
+  font-size: 18px !important;
+}
+
+input:focus {
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+textarea:focus {
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+label {
+  font-family: "Roboto Slab", serif !important;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: "Roboto Slab", serif;
+}
+
+footer .copyright {
+  margin: 10px;
+}
+
+footer .copyright h4 {
+  font-size: 25px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .copyright h4:hover {
+  font-size: 28px;
+}
+
+footer .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .sections h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .sections h5:hover {
+  font-size: 23px;
+}
+
+footer .sections p {
+  font-size: 16px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .sections p:hover {
+  font-size: 18px;
+}
+
+footer .sections .first-section {
+  margin: 70px 0px;
+  padding: 0px 100px;
+  border-right: 2px solid white;
+  text-align: left;
+}
+
+footer .sections .second-section {
+  margin: 70px 0px;
+  padding: 0px 100px;
+  border-right: 2px solid white;
+  text-align: left;
+}
+
+footer .sections .third-section {
+  margin: 70px 0px;
+  padding: 0px 100px;
+  text-align: left;
+}
+
+footer .sections .third-section a img {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .sections .third-section a img:hover {
+  width: 65px;
+  height: 65px;
+}
+
+footer .gesture h4 {
+  font-size: 25px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .gesture h4:hover {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 795px) {
+  footer .copyright {
+    margin: 5px;
+  }
+  footer .copyright h4 {
+    font-size: 20px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  footer .copyright h4:hover {
+    font-size: 23px;
+  }
+  footer .sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .sections h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  footer .sections h5:hover {
+    font-size: 21px;
+  }
+  footer .sections p {
+    font-size: 16px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  footer .sections p:hover {
+    font-size: 19px;
+  }
+  footer .sections .first-section {
+    margin: 40px 0px;
+    padding: 0px 60px;
+    border-right: 2px solid white;
+    text-align: left;
+  }
+  footer .sections .second-section {
+    margin: 40px 0px;
+    padding: 0px 60px;
+    border-right: 2px solid white;
+    text-align: left;
+  }
+  footer .sections .third-section {
+    margin: 40px 0px;
+    padding: 0px 60px;
+    text-align: left;
+  }
+  footer .sections .third-section a img {
+    width: 40px;
+    height: 40px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  footer .sections .third-section a img:hover {
+    width: 45px;
+    height: 45px;
+  }
+  footer .gesture h4 {
+    font-size: 20px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  footer .gesture h4:hover {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer .sections {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .sections .first-section {
+    margin: 20px 0px 20px 0px !important;
+    padding: 0px 0px 30px 0px !important;
+    border-right: none !important;
+    border-bottom: 2px solid white;
+  }
+  footer .sections .second-section {
+    margin: 20px 0px 20px 0px !important;
+    padding: 0px 0px 30px 0px !important;
+    border-right: none !important;
+    border-bottom: 2px solid white;
+  }
+  footer .sections .third-section {
+    margin: 20px 0px !important;
+    padding: 0px 0px !important;
+  }
+}

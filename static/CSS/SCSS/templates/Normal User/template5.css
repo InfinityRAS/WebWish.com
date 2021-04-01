@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+#img-div {
+  background-image: url("/static/Img/Template/Template4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.description-div {
+  height: 100vh;
+  width: 100vw;
+}
+
+.description-div .images-img {
+  height: 20%;
+}
+
+#intro-section #name {
+  position: absolute;
+  width: 100vw;
+  color: #9d0e44;
+  text-align: center;
+  bottom: 5px;
+  font: normal normal normal 80px "Merienda", cursive;
+}
+/*# sourceMappingURL=template5.css.map */
