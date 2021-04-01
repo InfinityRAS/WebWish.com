@@ -7,6 +7,8 @@
   height: 100vh;
 }
 
+header, .upgrade-container, nav {display: none;}
+
 body::before {
   content: "";
   background-image: url(../../../static/Img/Template/Template1.png);
@@ -34,6 +36,7 @@ body {
           animation-duration: 3s !important;
   -webkit-animation-delay: 0s !important;
           animation-delay: 0s !important;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes onopen {
@@ -56,7 +59,7 @@ body {
 
 footer {
   position: absolute;
-  bottom: -1415px;
+  bottom: -1779px;
   width: 100vw;
 }
 

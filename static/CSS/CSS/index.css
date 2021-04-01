@@ -87,7 +87,7 @@ main .creators .img-container {
   height: 60vh;
   border-radius: 20%;
   margin-right: 150px;
-  background: url("/static/Img/Img/Adithya.jpeg");
+  background: url(/static/Img/Img/Adithya.jpeg);
   background-size: cover;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;

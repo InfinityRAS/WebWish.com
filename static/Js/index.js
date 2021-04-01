@@ -1,4 +1,4 @@
-const imgContainer = document.querySelector('#img-container');
+const imgContainer = document.querySelector('.img-container');
 // // To provide images
 // const images = ['1.jpeg', '2.jpg', '3.jpeg'];
 // const path = '/static/Img/';
@@ -45,7 +45,7 @@ const themeChange = document.querySelector('.themeChange');
 let theme = 'white';
 themeChange.addEventListener('click', () => {
     const html = document.querySelector('html')
-    if (theme === 'white') {
+    if (theme == 'white') {
         html.style.filter = 'invert(1)';
         imgContainer.style.filter = 'invert(1)';
         document.querySelector('footer').style.filter = 'invert(1)';
