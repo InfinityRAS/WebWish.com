@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
   padding: 0px;
@@ -354,7 +355,7 @@ footer {
   color: white;
   text-align: center;
   padding: 40px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 footer .copyright {
@@ -550,4 +551,19 @@ footer .gesture h4:hover {
     margin: 20px 0px !important;
     padding: 0px 0px !important;
   }
+}
+
+.footer-btn{
+  color: #b5c7da;
+  text-decoration: none;
+}
+
+.footer-btn:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.footer-btn:active{
+  /* text-decoration: underline; */
+  color: red;
 }

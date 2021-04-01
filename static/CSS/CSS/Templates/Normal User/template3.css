@@ -7,6 +7,8 @@
   height: 100vh;
 }
 
+.all {display: none;}
+
 body::before {
   content: "";
   background-image: url(../../../static/Img/Template/Template3.jpg);
@@ -54,7 +56,7 @@ body {
 
 footer {
   position: absolute;
-  bottom: -1292px;
+  bottom: -1655px;
   width: 100vw;
 }
 
