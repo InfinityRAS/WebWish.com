@@ -11,55 +11,62 @@ html(lang="en")
         title 
             block title
     body 
-        .all
-            .menu
-                .menu-close-img-container
-                    img(src="/static/Img/icon/menu-close.svg", alt="Menu Close icon").menu-close-img
-                ul
-                    li.menu-links
-                        a(href="/")#home Home
-                    //- I have to change this data
-                    li.menu-links
-                        a(href="#")#about About Us
-                    li.menu-links
-                        a(href="#")#website Create Website
-                    li.menu-links#login
-                        a(href="#") Log in 
-                    li.menu-links
-                        a(href="#")#signup Sign Up!
-                    li.menu-links 
-                        a(href="#")#upgrade Upgrade Now!
-                    li.menu-links 
-                        a(href="#")#contact Contact Us
+        
+        .menu
+            .menu-close-img-container
+                img(src="/static/Img/icon/menu-close.svg", alt="Menu Close icon").menu-close-img
+            ul
+                li.menu-links
+                    a(href="/")#home Home
+                //- I have to change this data
+                li.menu-links
+                    a(href="#")#about About Us
+                li.menu-links
+                    a(href="#")#website Create Website
+                li.menu-links#login
+                    a(href="#") Log in 
+                li.menu-links
+                    a(href="/sign-up")#signup Sign Up!
+                li.menu-links 
+                    a(href="#")#upgrade Upgrade Now!
+                li.menu-links 
+                    a(href="#")#contact Contact Us
+                li.upgrade-container.menu-links 
+                    button.upgrade Upgrade now!
+               
 
-            .notification-wrapper
-                .another-wrapper
-                    button.notification Right click is disabled in this website.
-            header
-                .menu-img-container
-                    img(src="/static/Img/icon/menu.svg", alt="Menu Icon").menu-img
-                h1.main-heading Web Wish
-                div.themeChange
-                    //- Change the source and sourceset according to the directory
-                    img(src="/static/Img/icon/darkMode.svg", alt="Change theme", srcset="/static/Img/icon/darkMode.svg").themeChanger
+        .notification-wrapper
+            .another-wrapper
+                button.notification Right click is disabled in this website.
+        header
+            .menu-img-container
+                img(src="/static/Img/icon/menu.svg", alt="Menu Icon").menu-img
+            h1.main-heading Web Wish
+            div.themeChange
+                //- Change the source and sourceset according to the directory
+                img(src="/static/Img/icon/darkMode.svg", alt="Change theme", srcset="/static/Img/icon/darkMode.svg").themeChanger
+        
+        nav
+            ul
+                li.nav-links
+                    a(href="./html/index.html")#home-link Home
+                //- I have to change this data
+                li.nav-links
+                    a(href="#")#about-link About Us
+                li.nav-links
+                    a(href="#")#website-link Create Website
+                li.nav-links#login-link
+                    a(href="#") Log in 
+                li.nav-links
+                    a(href="/sign-up")#signup-link 
+                        button Sign Up!
+                li.upgrade-container.nav-links 
+                    button.upgrade Upgrade now!
+
+                li.nav-link.contact-container 
+                    button.contact Contact us!
             
-            nav
-                ul
-                    li.nav-links
-                        a(href="./html/index.html")#home-link Home
-                    //- I have to change this data
-                    li.nav-links
-                        a(href="#")#about-link About Us
-                    li.nav-links
-                        a(href="#")#website-link Create Website
-                    li.nav-links#login-link
-                        a(href="#") Log in 
-                    li.nav-links
-                        a(href="#")#signup-link 
-                            button Sign Up!
             
-            .upgrade-container 
-                button.upgrade Upgrade now!
         block body 
         footer 
             .copyright

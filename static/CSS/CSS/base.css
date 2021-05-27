@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 * {
   padding: 0px;
@@ -7,12 +7,51 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+@-webkit-keyframes menu-open {
+  from {
+    position: absolute;
+    left: -335px;
+  }
+  to {
+    position: absolute;
+    left: 0px;
+  }
+}
+@keyframes menu-open {
+  from {
+    position: absolute;
+    left: -335px;
+  }
+  to {
+    position: absolute;
+    left: 0px;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+@-webkit-keyframes menu-close {
+  from {
+    position: absolute;
+    left: 0px;
+  }
+  to {
+    position: absolute;
+    left: -335px;
+  }
+}
+
+@keyframes menu-close {
+  from {
+    position: absolute;
+    left: 0px;
+  }
+  to {
+    position: absolute;
+    left: -335px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -37,7 +76,7 @@ body {
   background-position: center;
   font-family: "Roboto Slab", serif !important;
   overflow-x: hidden;
-  overflow: overlay;
+  /* overflow: overlay; */
 }
 
 .all {
@@ -45,8 +84,11 @@ body {
 }
 
 .menu {
-  position: absolute;
-  left: -295px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed !important;
+  left: -335px;
+  top: 0;
   display: inline-block;
   height: 100vh;
   background: -webkit-gradient(
@@ -129,6 +171,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
+  z-index: 200000;
 }
 
 .notification-wrapper .another-wrapper {
@@ -271,7 +314,7 @@ nav ul .nav-links:hover {
 nav ul a {
   color: white;
   text-decoration: none;
-  margin: 120px;
+  margin: 63px;
 }
 
 nav ul button {
@@ -299,7 +342,7 @@ nav ul button:hover {
 }
 
 .upgrade-container .upgrade {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-size: 30px;
   border: none;
   background: -webkit-gradient(
@@ -320,6 +363,13 @@ nav ul button:hover {
 .upgrade-container .upgrade:hover {
   font-size: 35px;
   border-radius: 10px;
+}
+
+input,
+button,
+a {
+  cursor: pointer !important;
+  outline: none !important;
 }
 
 input,
@@ -355,7 +405,7 @@ footer {
   color: white;
   text-align: center;
   padding: 40px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 footer .copyright {
@@ -434,6 +484,34 @@ footer .sections .third-section a img {
   height: 60px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+.contact-container {
+  text-align: center;
+  margin-left: 25px;
+}
+
+.contact-container .contact {
+  font-size: 30px;
+  border: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#a1a1f8),
+    to(#9ab471)
+  );
+  background: linear-gradient(90deg, #a1a1f8, #9ab471);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.contact-container .contact:hover {
+  font-size: 35px;
+  border-radius: 10px;
 }
 
 footer .sections .third-section a img:hover {
@@ -553,17 +631,44 @@ footer .gesture h4:hover {
   }
 }
 
-.footer-btn{
+.footer-btn {
   color: #b5c7da;
   text-decoration: none;
 }
 
-.footer-btn:hover{
+.footer-btn:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.footer-btn:active{
+.footer-btn:active {
   /* text-decoration: underline; */
   color: red;
+}
+
+@media only screen and (max-width: 1436px) {
+  nav {
+    display: none;
+    pointer-events: none;
+  }
+
+  header {
+    position: sticky !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  header .menu-img-container {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media only screen and (max-width: 1855px) {
+  nav {
+    padding: 10px 7px;
+  }
+  nav ul .nav-links a {
+    margin: 40px;
+  }
 }

@@ -1,52 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap');
-@-webkit-keyframes menu-open {
-  from {
-    position: absolute;
-    left: -295px;
-  }
-  to {
-    position: absolute;
-    left: 0px;
-  }
-}
-@keyframes menu-open {
-  from {
-    position: absolute;
-    left: -295px;
-  }
-  to {
-    position: absolute;
-    left: 0px;
-  }
-}
-
-@-webkit-keyframes menu-close {
-  from {
-    position: absolute;
-    left: 0px;
-  }
-  to {
-    position: absolute;
-    left: -295px;
-  }
-}
-
-@keyframes menu-close {
-  from {
-    position: absolute;
-    left: 0px;
-  }
-  to {
-    position: absolute;
-    left: -295px;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Fascinate&family=Redressed&family=Syne+Mono&display=swap");
 
 * {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -56,7 +14,7 @@ html {
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background: linear-gradient(-45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -70,15 +28,15 @@ main .creators {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 100px;
 }
 
@@ -87,8 +45,6 @@ main .creators .img-container {
   height: 60vh;
   border-radius: 20%;
   margin-right: 150px;
-  background: url(/static/Img/Img/Adithya.jpeg);
-  background-size: cover;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -100,7 +56,7 @@ main .creators .img-container:hover {
 
 main .creators h3 {
   font-size: 40px;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   padding: 70px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -117,7 +73,13 @@ main .contact-container {
 main .contact-container .contact {
   font-size: 30px;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#a1a1f8), to(#9ab471));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#a1a1f8),
+    to(#9ab471)
+  );
   background: linear-gradient(90deg, #a1a1f8, #9ab471);
   color: white;
   padding: 15px;
@@ -141,7 +103,7 @@ main .why {
 }
 
 main .why .why-head {
-  font-family: 'Chango', cursive;
+  font-family: "Chango", cursive;
   margin: 50px 75px;
   font-size: 50px;
   -webkit-transition: 0.5s ease;
@@ -162,7 +124,7 @@ main .why .important {
 
 main .why .most-important {
   font-size: 55px;
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -175,18 +137,11 @@ main .why .end {
   margin-top: 50px;
 }
 
-input, button, a {
+input,
+button,
+a {
   cursor: pointer !important;
   outline: none !important;
-}
-
-@media only screen and (max-width: 1855px) {
-  nav {
-    padding: 10px 7px;
-  }
-  nav ul .nav-links a {
-    margin: 80px;
-  }
 }
 
 @media only screen and (max-width: 1677px) {
@@ -241,19 +196,7 @@ input, button, a {
   }
 }
 
-@media only screen and (max-width: 1436px) {
-  nav {
-    opacity: 0;
-    pointer-events: none;
-  }
-  main .contact-container, .upgrade-container {
-    display: none !important;
-  }
-  header .menu-img-container {
-    opacity: 1;
-    pointer-events: all;
-  }
-}
+
 
 @media only screen and (max-width: 1385px) {
   main .creators {
@@ -277,8 +220,8 @@ input, button, a {
   main .creators {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   main .creators .img-container {

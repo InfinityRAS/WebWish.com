@@ -16,6 +16,17 @@ app.get('/', (req, res) => {
     res.status(200).render('index.pug');
 });
 
+app.get('/sign-up', (req, res) => {
+    res.status(200).render('sign-up.pug')
+})
+
+app.get('*', (req, res) => {
+    let url = {
+        url: `${hostname}:${port}${req.url}`
+    }
+    res.status(404).render('notfound.pug', url);
+});
+
 app.post('*', (req, res) => {
     let url = {
         url: `${hostname}:${port}${req.url}`
