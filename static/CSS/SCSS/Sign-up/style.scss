@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Redressed&display=swap");
+
+@mixin flex($par1, $par2) {
+  display: flex;
+  align-items: $par1;
+  justify-content: $par2;
+}
+
+.sign-up-section-h {
+  font-size: 90px;
+  text-align: center;
+  font-family: "Redressed", cursive;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    font-size: 95px;
+  }
+}
+
+.sign-up {
+  background: white;
+  margin: 30px auto;
+  width: 75vw;
+  padding: 18px 35px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 27px 3px #1b1818;
+  height: auto;
+  font-size: 25px;
+
+  option {
+    cursor: pointer;
+  }
+
+  #sign-up-form {
+    input,
+    textarea {
+      border: 2px solid #39ceff;
+      width: 70%;
+      font-size: 25px !important;
+      padding: 5px 15px;
+      outline: none !important;
+      font-family: "PT Sans", sans-serif;
+      transition: all 0.5s ease-in-out;
+
+      &::placeholder {
+        font-size: 25px;
+        vertical-align: middle;
+        font-family: "PT Sans", sans-serif;
+      }
+
+      &:hover {
+        height: 50px;
+        width: 72%;
+      }
+    }
+
+    label {
+      margin-right: 5px !important;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        font-size: 28px;
+      }
+    }
+
+    div {
+      box-sizing: content-box;
+      margin: 50px 0px;
+      @include flex(center, center);
+    }
+
+    .user-type-form {
+      height: 46px;
+      width: 70%;
+      font-family: "PT Sans";
+      font-size: 20px;
+      box-sizing: content-box;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        height: 55px;
+        width: 72%;
+      }
+    }
+
+    .form-btn-div {
+      justify-content: space-evenly !important;
+      font-family: "PT Sans", sans-serif;
+
+      .form-btn {
+        width: 10%;
+        /* width: 57%; */
+        height: auto;
+        padding: 9px 5px !important;
+        font-size: 25px;
+        font-family: inherit;
+        border: none;
+        border-radius: 4px;
+        background: #005d00;
+        color: white;
+        transition: 0.5s ease;
+
+        &:hover {
+          background: #00d600;
+          color: black;
+          padding: 10px;
+          -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1316px) {
+  .user-type {
+    flex-direction: column !important;
+  }
+
+  .form-btn {
+    width: 38% !important;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .sign-up {
+    width: 90vw !important;
+  }
+
+  .sign-up #sign-up-form input,
+  .sign-up #sign-up-form textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .form-btn {
+    width: 45% !important;
+  }
+}

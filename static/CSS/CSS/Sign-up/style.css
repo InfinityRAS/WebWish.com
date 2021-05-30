@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Redressed&display=swap");
+.sign-up-section-h {
+  font-size: 90px;
+  text-align: center;
+  font-family: "Redressed", cursive;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign-up-section-h:hover {
+  font-size: 95px;
+}
+
+.sign-up {
+  background: white;
+  margin: 30px auto;
+  width: 75vw;
+  padding: 18px 35px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 27px 3px #1b1818;
+          box-shadow: 0px 0px 27px 3px #1b1818;
+  height: auto;
+  font-size: 25px;
+}
+
+.sign-up option {
+  cursor: pointer;
+}
+
+.sign-up #sign-up-form input,
+.sign-up #sign-up-form textarea {
+  border: 2px solid #39ceff;
+  width: 70%;
+  font-size: 25px !important;
+  padding: 5px 15px;
+  outline: none !important;
+  font-family: "PT Sans", sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign-up #sign-up-form input::-webkit-input-placeholder,
+.sign-up #sign-up-form textarea::-webkit-input-placeholder {
+  font-size: 25px;
+  vertical-align: middle;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sign-up #sign-up-form input:-ms-input-placeholder,
+.sign-up #sign-up-form textarea:-ms-input-placeholder {
+  font-size: 25px;
+  vertical-align: middle;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sign-up #sign-up-form input::-ms-input-placeholder,
+.sign-up #sign-up-form textarea::-ms-input-placeholder {
+  font-size: 25px;
+  vertical-align: middle;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sign-up #sign-up-form input::placeholder,
+.sign-up #sign-up-form textarea::placeholder {
+  font-size: 25px;
+  vertical-align: middle;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sign-up #sign-up-form input:hover,
+.sign-up #sign-up-form textarea:hover {
+  height: 50px;
+  width: 72%;
+}
+
+.sign-up #sign-up-form label {
+  margin-right: 5px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sign-up #sign-up-form label:hover {
+  font-size: 28px;
+}
+
+.sign-up #sign-up-form div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign-up #sign-up-form .user-type-form {
+  height: 46px;
+  width: 70%;
+  font-family: "PT Sans";
+  font-size: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign-up #sign-up-form .user-type-form:hover {
+  height: 55px;
+  width: 72%;
+}
+
+.sign-up #sign-up-form .form-btn-div {
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sign-up #sign-up-form .form-btn-div .form-btn {
+  width: 10%;
+  /* width: 57%; */
+  height: auto;
+  padding: 9px 5px !important;
+  font-size: 25px;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  background: #005d00;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sign-up #sign-up-form .form-btn-div .form-btn:hover {
+  background: #00d600;
+  color: black;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
+}
+
+@media only screen and (max-width: 1316px) {
+  .user-type {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .form-btn {
+    width: 38% !important;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .sign-up {
+    width: 90vw !important;
+  }
+  .sign-up #sign-up-form input,
+  .sign-up #sign-up-form textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .form-btn {
+    width: 45% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

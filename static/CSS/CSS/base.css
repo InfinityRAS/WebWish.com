@@ -59,6 +59,14 @@
   border-radius: 5px;
 }
 
+::-webkit-scrollbar-track {
+  color: transparent;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  width: 10px;
+  border-radius: 5px;
+}
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -380,20 +388,7 @@ textarea {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border-radius: 0.25rem;
   font-size: 18px !important;
-}
-
-input:focus {
-  background-color: #fff;
-  border-color: #86b7fe;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-
-textarea:focus {
-  background-color: #fff;
-  border-color: #86b7fe;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  cursor: pointer !important;
 }
 
 label {

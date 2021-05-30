@@ -16,8 +16,21 @@ app.get('/', (req, res) => {
     res.status(200).render('index.pug');
 });
 
+app.post('/', (req, res) => {
+    res.status(200).render('index.pug');
+});
+
 app.get('/sign-up', (req, res) => {
     res.status(200).render('sign-up.pug')
+});
+
+app.post("/sign-up/submit", (req, res) => {
+    let userName = req.body.userName;
+    let password = req.body.password;
+    let type = req.body.userType;
+
+    console.log(userName, password, type);
+    res.status(200).redirect("/");
 })
 
 app.get('*', (req, res) => {

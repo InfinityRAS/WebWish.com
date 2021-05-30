@@ -1,1 +1,34 @@
 extends base.pug 
+
+block style 
+    link(rel="stylesheet", href="/static/CSS/CSS/Sign-up/style.css")
+
+block title 
+    | Sign Up - WebWish.com 
+
+block body 
+    section.sign-up-section 
+        h1.sign-up-section-h 
+            | Sign Up 
+        
+        .sign-up 
+            form(action="/sign-up/submit", method="post" id="sign-up-form") 
+                .user-name 
+                    input.user-name-form#user-name-form(type="text", name="userName" placeholder="Enter your user name")
+                
+                .password 
+                    input.passoword-form#password-form(type="password", name="password" placeholder="Enter a Unique Password")
+                
+                .user-type 
+                    label(for="user-type-form") Select Your User Type
+                    select(name="userType")#user-type-form.user-type-form
+                        option(value="normal") Normal 
+                        option(value="Recommended") Recommeneded
+                        option(value="Premium") Premium
+
+                .form-btn-div
+                    button(type="submit" id="submit-btn-form").form-btn Submit
+                    button(type="reset" id="reset-btn-form").form-btn Reset
+
+block js 
+    script(src="/static/Js/sign-up.js") 
