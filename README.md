@@ -5,6 +5,8 @@ Hello Coders!
 
   There is also a general instruction: Please give class "img" to all the images in your files (except the images in the footer and navigation bar);
   
+  Give our repository a star..:)
+  
   
 Thanks  
 
