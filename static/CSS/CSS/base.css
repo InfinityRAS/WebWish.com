@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+header, nav, .menu {
+  z-index: 50000000;
+}
+
 @-webkit-keyframes menu-open {
   from {
     position: absolute;
